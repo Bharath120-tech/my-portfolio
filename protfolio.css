@@ -1,0 +1,375 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0b0b0b;
+    color:white;
+}
+
+
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#111;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+}
+
+.logo{
+    font-size:30px;
+    color:#00f5ff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#00f5ff;
+}
+
+
+
+.home{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:100px 10% 50px;
+}
+
+
+.home-text{
+    max-width:600px;
+}
+
+
+.home-text h1{
+    font-size:45px;
+}
+
+
+.home-text h1 span{
+    color:#00f5ff;
+}
+
+
+.home-text h2{
+    margin:15px 0;
+    color:#ccc;
+}
+
+
+.home-text p{
+    line-height:1.6;
+    color:#aaa;
+}
+
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    background:#00f5ff;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+
+/* Profile Image */
+
+.home-img img{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #00f5ff;
+    box-shadow:0 0 30px #00f5ff;
+}
+
+
+
+section{
+    padding:80px 10%;
+}
+
+
+.heading{
+    text-align:center;
+    font-size:35px;
+    margin-bottom:40px;
+    color:#00f5ff;
+}
+
+
+.about{
+    padding:80px 8%;
+    background: #111;
+    color: white;
+}
+
+
+.title{
+    text-align:center;
+    font-size:45px;
+    font-weight:800;
+    margin-bottom:50px;
+}
+
+
+.title span{
+    color:#635bff;
+}
+
+
+
+.about-container{
+
+    display:flex;
+    align-items:center;
+    gap:60px;
+
+}
+
+
+
+.about-image img{
+
+    width:380px;
+    height:520px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(99,91,255,0.3);
+
+}
+
+
+
+.about-content{
+
+    flex:1;
+
+}
+
+
+.about-content h2{
+
+    font-size:32px;
+    margin-bottom:20px;
+
+}
+
+
+.about-content p{
+
+    color:#777;
+    font-size:18px;
+    line-height:1.7;
+
+}
+
+
+
+.details{
+
+    margin-top:30px;
+
+}
+
+
+.details p{
+
+    margin-bottom:18px;
+
+}
+
+
+.details b{
+
+    color: white;
+    font-size:18px;
+
+}
+
+
+
+.resume-btn{
+
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 35px;
+    background:#635bff;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+
+}
+
+
+.resume-btn:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+@media(max-width:768px){
+
+.about-container{
+
+    flex-direction:column;
+
+}
+
+
+.about-image img{
+
+    width:280px;
+    height:380px;
+
+}
+
+
+.about-content h2{
+
+    font-size:25px;
+
+}
+
+}
+
+.skill-box{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+
+.skill-box div{
+    background:#161616;
+    padding:20px 40px;
+    border-radius:10px;
+    border:1px solid #00f5ff;
+    transition:.3s;
+}
+
+
+.skill-box div:hover{
+    transform:translateY(-10px);
+    background:#00f5ff;
+    color:black;
+}
+
+
+
+.project-card{
+    max-width:600px;
+    margin:auto;
+    background:#161616;
+    padding:30px;
+    border-radius:15px;
+    border-left:5px solid #00f5ff;
+}
+
+
+.project-card h3{
+    color:#00f5ff;
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+
+.project-card p{
+    color:#ccc;
+    line-height:1.6;
+}
+
+
+
+.contact-info{
+    text-align:center;
+    line-height:2.5;
+    color:#ccc;
+}
+
+
+.contact-info i{
+    color:#00f5ff;
+    margin-right:10px;
+}
+
+
+
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    color:#aaa;
+}
+
+
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+
+.home{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+
+.home-img img{
+    width:220px;
+    height:220px;
+}
+
+
+.home-text h1{
+    font-size:35px;
+}
+
+}
